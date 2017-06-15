@@ -47,5 +47,10 @@ CREATE TABLE responses (
   PRIMARY KEY(orderId)
 );
 
-
-
+CREATE TABLE special (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  filter NVARCHAR(500),
+  endTime DATETIME,
+  newPrice INT,
+  description NVARCHAR(500)
+);
