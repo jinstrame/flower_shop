@@ -2,8 +2,7 @@ CREATE TABLE goods (
   id INT PRIMARY KEY,
   type ENUM('bouquet', 'pot', 'composition', 'flower'),
   price INT,
-  flowers NVARCHAR(400),
-  special BOOLEAN
+  flowers NVARCHAR(400)
 );
 
 CREATE TABLE clients (
