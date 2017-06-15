@@ -1,7 +1,8 @@
-CREATE TABLE flowers (
+CREATE TABLE goods (
   id INT PRIMARY KEY,
-  type ENUM('bouquet', 'pot'),
-  price INT
+  type ENUM('bouquet', 'pot', 'composition', 'flower'),
+  price INT,
+  flowers NVARCHAR(400)
 );
 
 CREATE TABLE clients (
@@ -20,7 +21,7 @@ CREATE TABLE orders (
   id INT AUTO_INCREMENT PRIMARY KEY ,
   clientId INT,
   time DATETIME,
-  status ENUM('completed', 'active'),
+  status ENUM('unpaid', 'active', 'completed'),
 
   CONSTRAINT ORDERS_CLIENT_ID_FK FOREIGN KEY (clientId) REFERENCES clients(phone)
 );
@@ -28,9 +29,10 @@ CREATE TABLE orders (
 CREATE TABLE orderDetails (
   orderId INT,
   flowerId INT,
+  count INT,
 
   CONSTRAINT ORDER_DETAILS_ORDER_ID_FK FOREIGN KEY (orderId) REFERENCES orders(id),
-  CONSTRAINT ORDER_DETAILS_FLOWER_ID_FK FOREIGN KEY (flowerId) REFERENCES flowers(id),
+  CONSTRAINT ORDER_DETAILS_FLOWER_ID_FK FOREIGN KEY (flowerId) REFERENCES goods (id),
 
   PRIMARY KEY (orderId, flowerId)
 );
@@ -42,5 +44,6 @@ CREATE TABLE responses (
   CONSTRAINT RESPONSES_ORDER_ID_FK FOREIGN KEY (orderId) REFERENCES orders(id),
 
   PRIMARY KEY(orderId)
-)
+);
+
 
