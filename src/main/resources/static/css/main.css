@@ -241,3 +241,7 @@ section.order  {
 	border-top: 0px solid #F6CEF5;
 	background: #F6CEF5
 }
+.v-center {
+	position: relative;
+	transform: translateY(50%);
+}
