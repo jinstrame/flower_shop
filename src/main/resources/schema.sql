@@ -1,6 +1,6 @@
 CREATE TABLE goods (
   id INT PRIMARY KEY,
-  type ENUM('bouquet', 'pot', 'composition', 'flower'),
+  type ENUM('bouquet', 'pot', 'composition', 'flower', 'package'),
   price INT,
   flowers NVARCHAR(400)
 );
@@ -29,6 +29,7 @@ CREATE TABLE orders (
   onlinePayment BOOLEAN,
   transport INT,
   time DATETIME,
+  address NVARCHAR(4096),
   status ENUM('unpaid', 'active', 'completed'),
 
   CONSTRAINT ORDERS_CLIENT_ID_FK FOREIGN KEY (clientId) REFERENCES clients(phone),
@@ -39,6 +40,7 @@ CREATE TABLE orderDetails (
   orderId INT,
   flowerId INT,
   count INT,
+  package BOOLEAN,
 
   CONSTRAINT ORDER_DETAILS_ORDER_ID_FK FOREIGN KEY (orderId) REFERENCES orders(id),
   CONSTRAINT ORDER_DETAILS_FLOWER_ID_FK FOREIGN KEY (flowerId) REFERENCES goods (id),

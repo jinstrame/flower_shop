@@ -29,6 +29,19 @@
                             <input type="text" name="phone" placeholder="Ваш номер телефона..." required/>
                             <button class="button" type="submit">Заказать</button>
                         </form>
+                        <form id="package" class="pop_form">
+                            <h3>Выбор упаковки</h3>
+                            <div class="radio">
+                                <label><input type="radio" name="package" checked="checked">Добавить упаковку</label>
+                            </div>
+                            <div class="radio">
+                                <label><input type="radio" name="package">Без упаковки</label>
+                            </div>
+                            <div>
+                                <button class="button" type="submit">В корзину</button>
+                                <button class="button" type="submit">Продолжить</button>
+                            </div>
+                        </form>
                     </div>
                     <div class="top_contacts"><i class="fa fa-mobile"></i> 8-906-286-61-60</div>
                     <div class="soc_buttons">
@@ -75,93 +88,62 @@
             <span class="logo">Цветы</span>
         </div>
         <div class="row">
-            <div class="col-md-12">
-                <ul class="list-group">
-                    <li class="list-group-item-info" style="margin-top: 10px;">
-                        <div class="row fa-align-center">
-                            <div class="col-md-2">
-                                <a href="/img/333.jpg" class="fancybox"><img
-                                        src="/img/333.jpg" class="img-fluid img-responsive img-rounded" style="height: 60px"/></a>
-                            </div>
-                            <div class="col-md-4">
-                                <h3>Розы</h3>
-                            </div>
-                            <div class="col-md-2 v-center">
-                                <h4 class="red-text"><i class="fa fa-money"></i> 100 p</h4>
-                            </div>
-                            <div class="col-md-2 v-center form-group">
-                                <input type="text" class="pull-right" placeholder="Количество"/>
-                            </div>
-                            <div class="col-md-2">
-                                <a class="btn btn-info">В корзину</a>
-                            </div>
-                        </div>
-                    </li>
+            <div class="col-md-4">
+                <div class="card card-cascade narrower" style="margin-bottom: 20px">
+                    <div class="view overlay hm-white-slight">
+                        <img src="/img/333.jpg" class="img-fluid img-responsive img-rounded" alt="">
+                        <a>
+                            <div class="mask waves-effect waves-light"></div>
+                        </a>
+                    </div>
+                    <div class="card-block" style="margin: 10px">
+                        <!--Title-->
+                        <h4 class="card-title">Розы</h4>
+                        <!--Text-->
+                        <h4 class="red-text"><i class="fa fa-money"></i> 100 p</h4>
+                        <p class="card-text"><input type="text" class="pull-right" placeholder="Количество"/></p>
+                    </div>
+                    <a href="#package" class="btn btn-info fancybox">В корзину</a>
+                </div>
+            </div>
 
-                    <li class="list-group-item-info" style="margin-top: 10px;">
-                        <div class="row fa-align-center">
-                            <div class="col-md-2">
-                                <img src="/img/1.jpg" class="img-fluid img-responsive img-rounded"
-                                     style="height: 60px"/>
-                            </div>
-                            <div class="col-md-4">
-                                <h3>Хрезантемы</h3>
-                            </div>
-                            <div class="col-md-2 v-center">
-                                <h4 class="red-text"><i class="fa fa-money"></i> 60 p</h4>
-                            </div>
-                            <div class="col-md-2 v-center form-group">
-                                <input type="text" class="pull-right" placeholder="Количество"/>
-                            </div>
-                            <div class="col-md-2">
-                                <a class="btn btn-info">В корзину</a>
-                            </div>
-                        </div>
-                    </li>
+            <div class="col-md-4">
+                <div class="card card-cascade narrower" style="margin-bottom: 20px">
+                    <div class="view overlay hm-white-slight">
+                        <img src="/img/3.jpg" class="img-fluid img-responsive img-rounded" alt="">
+                        <a>
+                            <div class="mask waves-effect waves-light"></div>
+                        </a>
+                    </div>
+                    <div class="card-block" style="margin: 10px">
+                        <!--Title-->
+                        <h4 class="card-title">Герберы</h4>
+                        <!--Text-->
+                        <h4 class="red-text"><i class="fa fa-money"></i> 80 p</h4>
+                        <p class="card-text"><input type="text" class="pull-right" placeholder="Количество"/></p>
+                    </div>
+                    <a class="btn btn-info">В корзину</a>
+                </div>
+            </div>
 
-                    <li class="list-group-item-info" style="margin-top: 10px;">
-                        <div class="row fa-align-center">
-                            <div class="col-md-2">
-                                <img src="/img/2.jpg" class="img-fluid img-responsive img-rounded"
-                                     style="height: 60px"/>
-                            </div>
-                            <div class="col-md-4">
-                                <h3>Герберы</h3>
-                            </div>
-                            <div class="col-md-2 v-center">
-                                <h4 class="red-text"><i class="fa fa-money"></i> 90 p</h4>
-                            </div>
-                            <div class="col-md-2 v-center form-group">
-                                <input type="text" class="pull-right" placeholder="Количество"/>
-                            </div>
-                            <div class="col-md-2">
-                                <a class="btn btn-info">В корзину</a>
-                            </div>
-                        </div>
-                    </li>
 
-                    <li class="list-group-item-info" style="margin-top: 10px;">
-                        <div class="row fa-align-center">
-                            <div class="col-md-2">
-                                <img src="/img/1000.jpg" class="img-fluid img-responsive img-rounded"
-                                     style="height: 60px"/>
-                            </div>
-                            <div class="col-md-4">
-                                <h3>Упаковка</h3>
-                            </div>
-                            <div class="col-md-2 v-center">
-                                <h4 class="red-text"><i class="fa fa-money"></i> 50 p</h4>
-                            </div>
-                            <div class="col-md-2 v-center form-group">
-                                <input type="text" class="pull-right" placeholder="Количество"/>
-                            </div>
-                            <div class="col-md-2">
-                                <a class="btn btn-info">В корзину</a>
-                            </div>
-                        </div>
-                    </li>
-
-                </ul>
+            <div class="col-md-4">
+                <div class="card card-cascade narrower" style="margin-bottom: 20px">
+                    <div class="view overlay hm-white-slight">
+                        <img src="/img/2.jpg" class="img-fluid img-responsive img-rounded" alt="">
+                        <a>
+                            <div class="mask waves-effect waves-light"></div>
+                        </a>
+                    </div>
+                    <div class="card-block" style="margin: 10px">
+                        <!--Title-->
+                        <h4 class="card-title">ХрИзантемы</h4>
+                        <!--Text-->
+                        <h4 class="red-text"><i class="fa fa-money"></i> 60 p</h4>
+                        <p class="card-text"><input type="text" class="pull-right" placeholder="Количество"/></p>
+                    </div>
+                    <a class="btn btn-info">В корзину</a>
+                </div>
             </div>
         </div>
     </div>
