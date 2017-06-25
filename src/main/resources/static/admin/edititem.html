@@ -30,55 +30,13 @@
                             <button class="button" type="submit">Заказать</button>
                         </form>
 
-
-                        <!--Form with header-->
-                        <div id="login" class="card" style="width:350px; padding-top: 50px;">
-                            <div class="card-block">
-
-                                <!--Header-->
-                                <div class="form-header  purple darken-4">
-                                    <h3><i class="fa fa-lock"></i> Администратор:</h3>
-                                </div>
-
-                                <!--Body-->
-                                <div class="md-form">
-                                    <i class="fa fa-user prefix"></i>
-                                    <input type="text" id="form2" class="form-control">
-                                    <label for="form2">Логин</label>
-                                </div>
-
-                                <div class="md-form">
-                                    <i class="fa fa-lock prefix"></i>
-                                    <input type="password" id="form4" class="form-control">
-                                    <label for="form4">Пароль</label>
-                                </div>
-
-                                <div class="text-center">
-                                    <a href="/admin/index.html" class="btn btn-deep-purple">Войти</a>
-                                </div>
-
-                            </div>
-
-                            <!--Footer-->
-                            <div class="modal-footer">
-                                <div class="options">
-                                    <p><a>Восстановить пароль</a></p>
-                                </div>
-                            </div>
-
-                        </div>
-                        <!--/Form with header-->
-
-
                     </div>
                     <div class="top_contacts"><i class="fa fa-mobile"></i> 8-906-286-61-60</div>
                     <div class="soc_buttons">
-                        <a href="#login" class="fancybox"><i class="fa fa-user"></i></a>
+                        <a href="/index.html"><i class="fa">Выход</i></a>
                         <a href="https://vk.com/cvetliliya" target="_blank"><i class="fa fa-vk"></i></a>
                         <a href="https://vk.com/cvetliliya" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
                     </div>
-
-
 
                 </div>
             </div>
@@ -110,7 +68,6 @@
             </div>
         </div>
     </div>
-
 </header>
 
 <section class="main_content">
@@ -118,77 +75,78 @@
         <div class="container">
             <div class="col-md-12">
                 <div class="row">
-                    <span class="logo">Корзина</span>
+                    <span class="logo">Редактировать товар</span>
                 </div>
-                <div class="col-md-8 col-md-offset-2">
+                <div class="col-md-10 col-md-offset-1">
                     <div class="list-group">
-                        <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+                        <a class="list-group-item list-group-item-action flex-column align-items-start">
                             <div class="row">
-                                <div class="col-md-2" style="margin-top: 8px;">
-                                    <img src="/img/333.jpg" class="img-fluid img-responsive img-rounded" alt="">
-                                </div>
-                                <div class="col-md-5 d-flex w-100 justify-content-between">
-                                    <h4 class="mb-1">Розы</h4>
-                                    <small>7 штук + упаковка</small>
-                                </div>
-                                <div class="col-md-2 align-middle" style="margin-top: 15px;">
-                                    <h4 class="red-text"><i class="fa fa-money"></i> 800 p</h4>
-                                </div>
-                                <div class="col-md-3" style="height: 100%">
-                                    <button class="btn btn-danger align-bottom">Удалить</button>
-                                </div>
-                            </div>
-                        </a>
-                        <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
-                            <div class="row">
-                                <div class="col-md-2" style="margin-top: 8px;">
-                                    <img src="/img/902.jpg" class="img-fluid img-responsive img-rounded" alt="">
-                                </div>
-                                <div class="col-md-5 d-flex w-100 justify-content-between">
-                                    <h4 class="mb-1">Фиалка</h4>
-                                    <small>Горшечное растение</small>
-                                </div>
-                                <div class="col-md-2 align-middle" style="margin-top: 15px;">
-                                    <h4 class="red-text"><i class="fa fa-money"></i> 1200 p</h4>
-                                </div>
-                                <div class="col-md-3" style="height: 100%">
-                                    <button class="btn btn-danger align-bottom">Удалить</button>
-                                </div>
-                            </div>
-                        </a>
-                        <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
-                            <div class="row">
-                                <div class="col-md-2" style="margin-top: 10px;">
-                                    <h4>Итого:</h4>
-                                </div>
-                                <div class="col-md-6" style="margin-top: 10px;">
-                                    <h4 class="red-text"><i class="fa fa-money"></i> 2000 p</h4>
-                                </div>
                                 <div class="col-md-4">
-                                    <button class="d-flex justify-content-center btn btn-info">Оформить заказ</button>
+                                    <label class="">Изображение</label>
+
+                                    <label class="btn-file" style="width: 100%">
+                                        <img class="img-fluid img-responsive img-rounded" src="/img/333.jpg">
+                                        <small>Нажмите чтобы изменить</small>
+                                        <input type="file" style="display: none; width: 100%">
+                                    </label>
+
+                                </div>
+                                <div class="col-md-8">
+                                    <form style="margin: 20px">
+                                        <div class="row">
+                                            <!--First column-->
+                                            <div class="col-md-12">
+                                                <div class="md-form">
+                                                    <input type="text" id="form41" class="form-control" value="Роза">
+                                                    <label for="form41" class="">Название товара</label>
+                                                </div>
+                                            </div>
+
+                                            <!--Second column-->
+                                            <div class="col-md-3">
+                                                <div class="md-form">
+                                                    <input type="text" id="form51" class="form-control" value="100 р">
+                                                    <label for="form51" class="">Цена</label>
+                                                </div>
+                                            </div>
+
+                                            <!--Third column-->
+                                            <div class="col-md-3">
+                                                <div class="md-form">
+                                                    <input type="text" id="form61" class="form-control" value="Цветы">
+                                                    <label for="form61" class="">Тип</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!--/.Third row-->
+                                    </form>
                                 </div>
                             </div>
                         </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="footer_my">
-        <div class="col-lg-12">
-            <div class="row">
-                <div class="copyright">
-                    <div class="container">
-                        <div class="copy_box">
 
-                            <p>Copyright © 2017 - Lily Flower. Все права защищены. Копирование материалов разрешено
-                                только с письменного разрешения авторов.</p>
-                        </div>
+                        <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+                            <div class="row">
+                                <div class="col-md-4 col-md-offset-4">
+                                    <button class="d-flex justify-content-center btn btn-info">
+                                        Сохранить
+                                    </button>
+                                </div>
+                            </div>
+                        </a>
+
                     </div>
                 </div>
             </div>
         </div>
-    </div>
+
+        <div class="copyright">
+            <div class="container">
+                <div class="copy_box">
+                    <p>Copyright © 2017 - Lily Flower. Все права защищены. Копирование материалов разрешено
+                        только с письменного разрешения авторов.</p>
+                </div>
+            </div>
+        </div>
 
 
 </section>

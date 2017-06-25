@@ -29,13 +29,57 @@
                             <input type="text" name="phone" placeholder="Ваш номер телефона..." required/>
                             <button class="button" type="submit">Заказать</button>
                         </form>
+
+
+                        <!--Form with header-->
+                        <div id="login" class="card" style="width:350px; padding-top: 50px;">
+                            <div class="card-block">
+
+                                <!--Header-->
+                                <div class="form-header  purple darken-4">
+                                    <h3><i class="fa fa-lock"></i> Администратор:</h3>
+                                </div>
+
+                                <!--Body-->
+                                <div class="md-form">
+                                    <i class="fa fa-user prefix"></i>
+                                    <input type="text" id="form2" class="form-control">
+                                    <label for="form2">Логин</label>
+                                </div>
+
+                                <div class="md-form">
+                                    <i class="fa fa-lock prefix"></i>
+                                    <input type="password" id="form4" class="form-control">
+                                    <label for="form4">Пароль</label>
+                                </div>
+
+                                <div class="text-center">
+                                    <a href="/admin/index.html" class="btn btn-deep-purple">Войти</a>
+                                </div>
+
+                            </div>
+
+                            <!--Footer-->
+                            <div class="modal-footer">
+                                <div class="options">
+                                    <p><a>Восстановить пароль</a></p>
+                                </div>
+                            </div>
+
+                        </div>
+                        <!--/Form with header-->
+
+
                     </div>
                     <div class="top_contacts"><i class="fa fa-mobile"></i> 8-906-286-61-60</div>
                     <div class="soc_buttons">
+                        <a href="#login" class="fancybox"><i class="fa fa-user"></i></a>
                         <a href="https://vk.com/cvetliliya" target="_blank"><i class="fa fa-vk"></i></a>
                         <a href="https://vk.com/cvetliliya" target="_blank"><i class="fa fa-instagram"
                                                                                aria-hidden="true"></i></a>
                     </div>
+
+
                 </div>
             </div>
         </div>
@@ -48,25 +92,23 @@
                         <button class="main_mnu_button hidden-md hidden-lg"><i class="fa fa-bars"></i></button>
                         <ul>
                             <li class="active"><a href="/">Главная</a></li>
-                            <li><a href="/pages/bouckets.html">Букеты</a></li>
-                            <li><a href="#" target="_blank">Композиции</a></li>
-                            <li><a href="#" target="_blank">Горшечные</a></li>
-                            <li><a href="#" target="_blank">Цветы</a></li>
-                            <li><a href="#" target="_blank">Доставка</a></li>
-                            <li><a href="#" target="_blank">Оплата</a></li>
-                            <li><a href="#" target="_blank">Отзывы</a></li>
-                            <li><a href="#" target="_blank">О нас</a></li>
+                            <li><a href="/pages/bouckets">Букеты</a></li>
+                            <li><a href="/pages/compositions">Композиции</a></li>
+                            <li><a href="/pages/pots">Горшечные</a></li>
+                            <li><a href="/pages/flowers">Цветы</a></li>
+                            <li><a href="/pages/transport_info">Доставка</a></li>
+                            <li><a href="/pages/payment_info">Оплата</a></li>
+                            <li><a href="/pages/responses">Отзывы</a></li>
+                            <li><a href="/pages/about">О нас</a></li>
                         </ul>
                         <div class="basket_buttons">
-                            <a href="//vk.com/cvetliliya" target="_blank"><i class="fa fa-shopping-cart"
-                                                                             aria-hidden="true"></i></a>
+                            <a href="/pages/backet" target="_blank"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a>
                         </div>
                     </nav>
                 </div>
             </div>
         </div>
     </div>
-
 </header>
 
 <section class="main_content">
@@ -130,10 +172,8 @@
                             <div class="row">
                                 <div class="d-flex w-100 justify-content-between">
                                     <form style="margin: 20px">
-                                        <!--First row-->
-                                        <div class="row">
-                                            <!--First column-->
-                                            <div class="col-md-6">
+                                        <div class="row" style="margin: 10px;">
+                                            <div class="col-md-12">
                                                 <div class="md-form">
                                                     <i class="fa fa-user prefix"></i>
                                                     <input type="text" id="form81" class="form-control">
@@ -141,8 +181,16 @@
                                                            data-success="right">Ф.И.О.</label>
                                                 </div>
                                             </div>
-
-                                            <!--Second column-->
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="md-form">
+                                                    <i class="fa fa-envelope prefix"></i>
+                                                    <input type="text" id="form87" class="form-control">
+                                                    <label for="form87" data-error="wrong"
+                                                           data-success="right">Почта</label>
+                                                </div>
+                                            </div>
                                             <div class="col-md-6">
                                                 <div class="md-form">
                                                     <i class="fa fa-phone prefix"></i>
@@ -152,59 +200,44 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <!--/.First row-->
-                                        <!--Third row-->
                                         <div class="row">
-
-                                            <!--First column-->
                                             <div class="col-md-3">
                                                 <div class="md-form">
                                                     <input type="text" id="form41" class="form-control">
                                                     <label for="form41" class="">Город</label>
                                                 </div>
                                             </div>
-
-                                            <!--Second column-->
                                             <div class="col-md-3">
                                                 <div class="md-form">
                                                     <input type="text" id="form51" class="form-control">
                                                     <label for="form51" class="">Улица</label>
                                                 </div>
                                             </div>
-
-                                            <!--Third column-->
                                             <div class="col-md-3">
                                                 <div class="md-form">
                                                     <input type="text" id="form61" class="form-control">
                                                     <label for="form61" class="">Дом</label>
                                                 </div>
                                             </div>
-
                                             <div class="col-md-3">
                                                 <div class="md-form">
-                                                    <input type="text" id="form61" class="form-control">
-                                                    <label for="form61" class="">Квартира</label>
+                                                    <input type="text" id="form71" class="form-control">
+                                                    <label for="form71" class="">Квартира</label>
                                                 </div>
                                             </div>
-
                                         </div>
-                                        <!--/.Third row-->
-
-
                                     </form>
-
                                 </div>
-
                             </div>
                         </a>
                         <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
                             <div class="row">
                                 <div class="col-md-4 col-md-offset-4">
-                                    <button class="d-flex justify-content-center btn btn-info">Завершить оформление</button>
+                                    <button class="d-flex justify-content-center btn btn-info">Завершить оформление
+                                    </button>
                                 </div>
                             </div>
                         </a>
-
                     </div>
                 </div>
             </div>
@@ -215,7 +248,6 @@
                     <div class="copyright">
                         <div class="container">
                             <div class="copy_box">
-
                                 <p>Copyright © 2017 - Lily Flower. Все права защищены. Копирование материалов разрешено
                                     только с письменного разрешения авторов.</p>
                             </div>
@@ -242,35 +274,5 @@
 <script src="../libs/countdown/jquery.countdown-ru.js"></script>
 <script src="../libs/landing-nav/navigation.js"></script>
 <script src="../js/common.js"></script>
-<!-- Yandex.Metrika counter --><!-- Yandex.Metrika counter -->
-<script type="text/javascript">(function (d, w, c) {
-    (w[c] = w[c] || []).push(function () {
-        try {
-            w.yaCounter25346996 = new Ya.Metrika({
-                id: 25346996,
-                webvisor: true,
-                clickmap: true,
-                trackLinks: true,
-                accurateTrackBounce: true
-            });
-        } catch (e) {
-        }
-    });
-    var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () {
-        n.parentNode.insertBefore(s, n);
-    };
-    s.type = "text/javascript";
-    s.async = true;
-    s.src = (d.location.protocol == "https:" ? "https:" : "http:") + "//mc.yandex.ru/metrika/watch.js";
-    if (w.opera == "[object Opera]") {
-        d.addEventListener("DOMContentLoaded", f, false);
-    } else {
-        f();
-    }
-})(document, window, "yandex_metrika_callbacks");</script>
-<noscript>
-    <div><img src="//mc.yandex.ru/watch/25346996" style="position:absolute; left:-9999px;" alt=""/></div>
-</noscript><!-- /Yandex.Metrika counter --><!-- /Yandex.Metrika counter -->
-<!-- Google Analytics counter --><!-- /Google Analytics counter -->
 </body>
 </html>

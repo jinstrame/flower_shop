@@ -29,26 +29,57 @@
                             <input type="text" name="phone" placeholder="Ваш номер телефона..." required/>
                             <button class="button" type="submit">Заказать</button>
                         </form>
-                        <form id="package" class="pop_form">
-                            <h3>Выбор упаковки</h3>
-                            <div class="radio">
-                                <label><input type="radio" name="package" checked="checked">Добавить упаковку</label>
+
+
+                        <!--Form with header-->
+                        <div id="login" class="card" style="width:350px; padding-top: 50px;">
+                            <div class="card-block">
+
+                                <!--Header-->
+                                <div class="form-header  purple darken-4">
+                                    <h3><i class="fa fa-lock"></i> Администратор:</h3>
+                                </div>
+
+                                <!--Body-->
+                                <div class="md-form">
+                                    <i class="fa fa-user prefix"></i>
+                                    <input type="text" id="form2" class="form-control">
+                                    <label for="form2">Логин</label>
+                                </div>
+
+                                <div class="md-form">
+                                    <i class="fa fa-lock prefix"></i>
+                                    <input type="password" id="form4" class="form-control">
+                                    <label for="form4">Пароль</label>
+                                </div>
+
+                                <div class="text-center">
+                                    <a href="/admin/index.html" class="btn btn-deep-purple">Войти</a>
+                                </div>
+
                             </div>
-                            <div class="radio">
-                                <label><input type="radio" name="package">Без упаковки</label>
+
+                            <!--Footer-->
+                            <div class="modal-footer">
+                                <div class="options">
+                                    <p><a>Восстановить пароль</a></p>
+                                </div>
                             </div>
-                            <div>
-                                <button class="button" type="submit">В корзину</button>
-                                <button class="button" type="submit">Продолжить</button>
-                            </div>
-                        </form>
+
+                        </div>
+                        <!--/Form with header-->
+
+
                     </div>
                     <div class="top_contacts"><i class="fa fa-mobile"></i> 8-906-286-61-60</div>
                     <div class="soc_buttons">
+                        <a href="#login" class="fancybox"><i class="fa fa-user"></i></a>
                         <a href="https://vk.com/cvetliliya" target="_blank"><i class="fa fa-vk"></i></a>
                         <a href="https://vk.com/cvetliliya" target="_blank"><i class="fa fa-instagram"
                                                                                aria-hidden="true"></i></a>
                     </div>
+
+
                 </div>
             </div>
         </div>
@@ -62,9 +93,9 @@
                         <ul>
                             <li class="active"><a href="/">Главная</a></li>
                             <li><a href="/pages/bouckets.html">Букеты</a></li>
-                            <li><a href="#" target="_blank">Композиции</a></li>
-                            <li><a href="#" target="_blank">Горшечные</a></li>
-                            <li><a href="#" target="_blank">Цветы</a></li>
+                            <li><a href="/pages/compositions.html">Композиции</a></li>
+                            <li><a href="/pages/pots.html">Горшечные</a></li>
+                            <li><a href="/pages/pots.html">Цветы</a></li>
                             <li><a href="#" target="_blank">Доставка</a></li>
                             <li><a href="#" target="_blank">Оплата</a></li>
                             <li><a href="#" target="_blank">Отзывы</a></li>
@@ -79,7 +110,6 @@
             </div>
         </div>
     </div>
-
 </header>
 
 <section class="main_content" style="margin-top: 20px">
@@ -91,16 +121,14 @@
             <div class="col-md-4">
                 <div class="card card-cascade narrower" style="margin-bottom: 20px">
                     <div class="view overlay hm-white-slight">
-                        <img src="/img/333.jpg" class="img-fluid img-responsive img-rounded" alt="">
+                        <img src="/img/flowers/1.jpg" class="img-fluid img-responsive img-rounded" alt="">
                         <a>
                             <div class="mask waves-effect waves-light"></div>
                         </a>
                     </div>
                     <div class="card-block" style="margin: 10px">
-                        <!--Title-->
-                        <h4 class="card-title">Розы</h4>
-                        <!--Text-->
-                        <h4 class="red-text"><i class="fa fa-money"></i> 100 p</h4>
+                        <h4 class="card-title">Альстромерия</h4>
+                        <h4 class="green-text"><i class="fa fa-money"></i> 150 p</h4>
                         <p class="card-text"><input type="text" class="pull-right" placeholder="Количество"/></p>
                     </div>
                     <a href="#package" class="btn btn-info fancybox">В корзину</a>
@@ -110,19 +138,17 @@
             <div class="col-md-4">
                 <div class="card card-cascade narrower" style="margin-bottom: 20px">
                     <div class="view overlay hm-white-slight">
-                        <img src="/img/3.jpg" class="img-fluid img-responsive img-rounded" alt="">
+                        <img src="/img/flowers/2.jpg" class="img-fluid img-responsive img-rounded" alt="">
                         <a>
                             <div class="mask waves-effect waves-light"></div>
                         </a>
                     </div>
                     <div class="card-block" style="margin: 10px">
-                        <!--Title-->
-                        <h4 class="card-title">Герберы</h4>
-                        <!--Text-->
-                        <h4 class="red-text"><i class="fa fa-money"></i> 80 p</h4>
+                        <h4 class="card-title">Гортензия</h4>
+                        <h4 class="green-text"><i class="fa fa-money"></i> 350 p</h4>
                         <p class="card-text"><input type="text" class="pull-right" placeholder="Количество"/></p>
                     </div>
-                    <a class="btn btn-info">В корзину</a>
+                    <a href="#package" class="btn btn-info fancybox">В корзину</a>
                 </div>
             </div>
 
@@ -130,19 +156,162 @@
             <div class="col-md-4">
                 <div class="card card-cascade narrower" style="margin-bottom: 20px">
                     <div class="view overlay hm-white-slight">
-                        <img src="/img/2.jpg" class="img-fluid img-responsive img-rounded" alt="">
+                        <img src="/img/flowers/3.jpg" class="img-fluid img-responsive img-rounded" alt="">
                         <a>
                             <div class="mask waves-effect waves-light"></div>
                         </a>
                     </div>
                     <div class="card-block" style="margin: 10px">
-                        <!--Title-->
-                        <h4 class="card-title">ХрИзантемы</h4>
-                        <!--Text-->
-                        <h4 class="red-text"><i class="fa fa-money"></i> 60 p</h4>
+                        <h4 class="card-title">Ирисы</h4>
+                        <h4 class="green-text"><i class="fa fa-money"></i> 120 p</h4>
                         <p class="card-text"><input type="text" class="pull-right" placeholder="Количество"/></p>
                     </div>
-                    <a class="btn btn-info">В корзину</a>
+                    <a href="#package" class="btn btn-info fancybox">В корзину</a>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card card-cascade narrower" style="margin-bottom: 20px">
+                    <div class="view overlay hm-white-slight">
+                        <img src="/img/flowers/4.jpg" class="img-fluid img-responsive img-rounded" alt="">
+                        <a>
+                            <div class="mask waves-effect waves-light"></div>
+                        </a>
+                    </div>
+                    <div class="card-block" style="margin: 10px">
+                        <h4 class="card-title">Роза</h4>
+                        <small class="card-text">кустовая, микс, 80 см</small>
+                        <h4 class="green-text"><i class="fa fa-money"></i> 220 p</h4>
+                        <p class="card-text"><input type="text" class="pull-right" placeholder="Количество"/></p>
+                    </div>
+                    <a href="#package" class="btn btn-info fancybox">В корзину</a>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card card-cascade narrower" style="margin-bottom: 20px">
+                    <div class="view overlay hm-white-slight">
+                        <img src="/img/flowers/5.jpg" class="img-fluid img-responsive img-rounded" alt="">
+                        <a>
+                            <div class="mask waves-effect waves-light"></div>
+                        </a>
+                    </div>
+                    <div class="card-block" style="margin: 10px">
+                        <h4 class="card-title">Лилия</h4>
+                        <h4 class="green-text"><i class="fa fa-money"></i> 450 p</h4>
+                        <p class="card-text"><input type="text" class="pull-right" placeholder="Количество"/></p>
+                    </div>
+                    <a href="#package" class="btn btn-info fancybox">В корзину</a>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card card-cascade narrower" style="margin-bottom: 20px">
+                    <div class="view overlay hm-white-slight">
+                        <img src="/img/flowers/6.jpg" class="img-fluid img-responsive img-rounded" alt="">
+                        <a>
+                            <div class="mask waves-effect waves-light"></div>
+                        </a>
+                    </div>
+                    <div class="card-block" style="margin: 10px">
+                        <h4 class="card-title">Хризантема</h4>
+                        <small class="card-text">одноголовая, микс, 80 см</small>
+                        <h4 class="green-text"><i class="fa fa-money"></i> 200 p</h4>
+                        <p class="card-text"><input type="text" class="pull-right" placeholder="Количество"/></p>
+                    </div>
+                    <a href="#package" class="btn btn-info fancybox">В корзину</a>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card card-cascade narrower" style="margin-bottom: 20px">
+                    <div class="view overlay hm-white-slight">
+                        <img src="/img/flowers/7.jpg" class="img-fluid img-responsive img-rounded" alt="">
+                        <a>
+                            <div class="mask waves-effect waves-light"></div>
+                        </a>
+                    </div>
+                    <div class="card-block" style="margin: 10px">
+                        <h4 class="card-title">Роза </h4>
+                        <small class="card-text">Свитнес, 80 см</small>
+                        <h4 class="green-text"><i class="fa fa-money"></i> 220 p</h4>
+                        <p class="card-text"><input type="text" class="pull-right" placeholder="Количество"/></p>
+                    </div>
+                    <a href="#package" class="btn btn-info fancybox">В корзину</a>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card card-cascade narrower" style="margin-bottom: 20px">
+                    <div class="view overlay hm-white-slight">
+                        <img src="/img/flowers/8.jpg" class="img-fluid img-responsive img-rounded" alt="">
+                        <a>
+                            <div class="mask waves-effect waves-light"></div>
+                        </a>
+                    </div>
+                    <div class="card-block" style="margin: 10px">
+                        <h4 class="card-title">Статица</h4>
+                        <h4 class="green-text"><i class="fa fa-money"></i> 150 p</h4>
+                        <p class="card-text"><input type="text" class="pull-right" placeholder="Количество"/></p>
+                    </div>
+                    <a href="#package" class="btn btn-info fancybox">В корзину</a>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card card-cascade narrower" style="margin-bottom: 20px">
+                    <div class="view overlay hm-white-slight">
+                        <img src="/img/flowers/9.jpg" class="img-fluid img-responsive img-rounded" alt="">
+                        <a>
+                            <div class="mask waves-effect waves-light"></div>
+                        </a>
+                    </div>
+                    <div class="card-block" style="margin: 10px">
+                        <h4 class="card-title">Гиперикум</h4>
+                        <h4 class="green-text"><i class="fa fa-money"></i> 150 p</h4>
+                        <p class="card-text"><input type="text" class="pull-right" placeholder="Количество"/></p>
+                    </div>
+                    <a href="#package" class="btn btn-info fancybox">В корзину</a>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="row">
+
+            <div class="col-md-4">
+                <div class="card card-cascade narrower" style="margin-bottom: 20px">
+                    <div class="view overlay hm-white-slight">
+                        <img src="/img/flowers/10.jpg" class="img-fluid img-responsive img-rounded" alt="">
+                        <a>
+                            <div class="mask waves-effect waves-light"></div>
+                        </a>
+                    </div>
+                    <div class="card-block" style="margin: 10px">
+                        <h4 class="card-title">Хризантема</h4>
+                        <small class="card-text">кустовая, микс, 80 см</small>
+                        <h4 class="green-text"><i class="fa fa-money"></i> 170 p</h4>
+                        <p class="card-text"><input type="text" class="pull-right" placeholder="Количество"/></p>
+                    </div>
+                    <a href="#package" class="btn btn-info fancybox">В корзину</a>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card card-cascade narrower" style="margin-bottom: 20px">
+                    <div class="view overlay hm-white-slight">
+                        <img src="/img/flowers/11.jpg" class="img-fluid img-responsive img-rounded" alt="">
+                        <a>
+                            <div class="mask waves-effect waves-light"></div>
+                        </a>
+                    </div>
+                    <div class="card-block" style="margin: 10px">
+                        <h4 class="card-title">Роза </h4>
+                        <small class="card-text">Эксплорер, 80 см</small>
+                        <h4 class="green-text"><i class="fa fa-money"></i> 220 p</h4>
+                        <p class="card-text"><input type="text" class="pull-right" placeholder="Количество"/></p>
+                    </div>
+                    <a href="#package" class="btn btn-info fancybox">В корзину</a>
                 </div>
             </div>
         </div>
